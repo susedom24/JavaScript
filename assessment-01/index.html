@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+    <script>
+        function myFunction2() {
+            document.getElementById("sub").innerHTML="This paragraph is now changed in the head.";
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>JavaScript Demo</h1>
+    </header>
+    <main>
+        <div>
+            <button onclick="changeImage('images/tree.jpg')">Tree</button>
+            <button onclick="changeImage('images/orchid.jpg')">Orchid</button>
+            <button onclick="changeImage('images/roses.jpg')">Rose</button>
+            <script>
+                function changeImage(imageSource) {
+                    document.getElementById("main-image").src = imageSource;
+                }
+            </script>
+        </div>
+        <div>
+            <img src="images/tree.jpg" alt="Main Image" id="main-image">
+            <button onclick='document.getElementById("main-image").style.width = "50%"';>Change Width</button>
+            <button onclick='document.getElementById("main-image").style.display = "block" '>show</button>
+            <button onclick='document.getElementById("main-image").style.display = "none" '>hide</button>
+        </div>
+        <p id="sub">This paragraph will change when the button is clicked.</p>        
+        <p id="load"></p>
+            <button type="button" onclick="myFunction()">Change! External</button>
+            <button type="button" onclick="myFunction2()">Change! Head</button>
+            <button type="button" onclick='document.getElementById("sub").style.color="green"'>Change Color</button>
+
+        <script>
+            window.onload = function() {
+                document.getElementById("load").textContent = "Text is added after the page is loaded."
+            }
+        </script>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
