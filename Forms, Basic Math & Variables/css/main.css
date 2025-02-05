@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(252, 252, 140);
+    text-align: center;
+}
+
+.first, .second {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    width: 50%;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px auto;
+    width: 30%;
+}
+
+fieldset {
+    border: 2px solid red;
+    padding: 15px;
+    width: 50%;
+}
+
+fieldset legend {
+    font-size: 20px;
+}
+
+fieldset label {
+    font-size: 18px;
+}
+
+fieldset input {
+    font-size: 16px;
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+footer, header {
+    background-color: red;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+

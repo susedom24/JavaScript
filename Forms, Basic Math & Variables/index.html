@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Menu Options</h1>
+    </header>
+    <main>
+            <fieldset class="top">
+                <legend>Contact Info:</legend>
+                <label>Name:<br />
+                <input type="text" id="name" name="name"></label><br />
+            </fieldset>
+            <fieldset class="first">
+                <legend>Drink Options</legend>
+                <label>Dr. Pepper $2:<br />
+                <input type="number" id="drpepper" value="0"></label><br />
+                <label>Coke $2:<br />
+                <input type="number" id="coke" value="0"></label><br />
+                <label>Water $2:<br />
+                <input type="number" id="water" value="0"></label><br />
+                <label>Gatorade $2:<br />
+                <input type="number" id="gatorade" value="0"></label><br />
+                <label>Root Beer $2:<br />
+                <input type="number" id="root_beer" value="0"></label><br />
+            </fieldset>
+            <fieldset class="first">
+                <legend>Sandwich Options</legend>
+                <label>Hot Dog $4:<br />
+                <input type="number" id="hotdog" value="0"></label><br />
+                <label>Hamburger $4:<br />
+                <input type="number" id="hamburger" value="0"></label><br />
+                <label>Cheeseburger $4:<br />
+                <input type="number" id="cheeseburger" value="0"></label><br />
+                <label>Roast Beef $4:<br />
+                <input type="number" id="roast_beef" value="0"></label><br />
+                <label>Ham & Cheese $4:<br />
+                <input type="number" id="ham_cheese" value="0"></label><br />
+            </fieldset>
+            <fieldset class="second">
+                <legend>Dessert Options</legend>
+                <label>Van. Ice Cream $3:<br />
+                <input type="number" id="vanilla_ice" value="0"></label><br />
+                <label>Choc. Ice Cream $3:<br />
+                <input type="number" id="chocolate_ice" value="0"></label><br />
+                <label>Tiramisu $3:<br />
+                <input type="number" id="tiramisu" value="0"></label><br />
+                <label>Cheesecake $3:<br />
+                <input type="number" id="cheesecake" value="0"></label><br />
+                <label>Cookie $3:<br />
+                <input type="number" id="cookie" value="0"></label><br />
+            </fieldset>
+            <button type="button" onclick="calculateTotal()">Get Total</button>
+        <div>
+            <p>Drink Subtotal: $<span id="drinkTotal">0.00</span></p>
+            <p>Sandwich Subtotal: $<span id="sandwichTotal">0.00</span></p>
+            <p>Dessert Subtotal: $<span id="dessertTotal">0.00</span></p>
+            <p><span id="grandTotal">0.00</span></p>
+        </div>
+    </main>
+    <footer>
+        <p>Stephanie Usedom</p>
+    </footer>
+</body>
+</html>
