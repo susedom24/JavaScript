@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Random Number Generator</h1>
+    </header>
+    <main>
+        <div class="top">
+            <div class="one">
+                <h3>Start the game by clicking below:</h3>
+                <button onclick="game()">Start Game</button>
+            </div>
+            <div class="two" id="color">
+                <h3 id="start"></h3>
+                <h3 id="answer"></h3>
+            </div>
+            <div class="three">
+                <form>
+                    <label for="guess">Number</label>
+                    <input type="text" id="guess" width=5>
+                    <button type='button' id="submit" onclick="check()">Submit Guess</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+    <footer>Stephanie Usedom</footer>
+</body>
+</html>
