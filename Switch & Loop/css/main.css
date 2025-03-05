@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(252, 252, 151);
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, form, footer {
+    margin: 30px;
+}
+
+form, p {
+    font-size: larger;
+}
+
+header, footer {
+    background-color: rgb(137, 174, 253);
+    border: 2px solid black;
+    padding: 30px;
+}
+
+main {
+    flex: 1;
+}
