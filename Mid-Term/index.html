@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Faculty+Glyphic&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <title>Yarn Stash Organizer</title>
+</head>
+<body onload="loadYarn">
+    <header>
+        <h1>Yarn Stash Organizer</h1>
+    </header>
+    <main>
+        <div class="add">
+            <h2>Add New Yarn</h2>
+            <form id="yarn-form" onsubmit="addYarn(event)">
+                <label for="yarn-name">Yarn Name:</label>
+                <input type="text" id="yarn-name" required>
+                
+                <label for="yarn-brand">Brand:</label>
+                <input type="text" id="yarn-brand">
+                
+                <label for="yarn-weight">Weight:</label>
+                <input type="text" id="yarn-weight">
+                
+                <label for="yarn-color">Color:</label>
+                <input type="text" id="yarn-color">
+                
+                <label for="yarn-quantity">Quantity:</label>
+                <input type="number" id="yarn-quantity" min="1">
+                
+                <button type="submit">Add Yarn</button>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+    <footer>
+        <p>Stephanie Usedom</p>
+    </footer>
+</body>
+</html>
