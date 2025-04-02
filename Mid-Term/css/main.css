@@ -5,38 +5,104 @@
 }
 
 header, footer {
-    background-color: purple;
-    border: 2px solid black;
+    background-color: rgb(141, 181, 255);
     padding: 30px;
     letter-spacing: 2px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 body {
-    background-color: aqua;
-    font-family: "Faculty Glyphic", sans-serif;;
+    background-color: black;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-variant: small-caps;
 }
 
-.add {
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.add, .totals {
+    margin: 20px;
+    border: 2px solid white;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+
+.totals {
+    width: 310px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.totals p {
+    margin: 30px;
+    font-size: 20px;
+}
+
+label {
+    font-size: 16px;
+}
+
+/* Form */
+#yarn-form {
+    width: 250px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin: 30px;
 }
 
-#yarn-form {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: auto;
-}
-
-button, .add h2 {
+button, .add h3, .totals h3 {
     margin: 10px;
 }
 
-div {
+.stash {
+    min-width: 100%;
+    min-height: 500px;
+    background-image: url(../images/yarn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Stash Display */
+#yarn-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 90%; 
+    max-width: 100%;
+    margin: 30px auto 30px auto;
+}
+
+/* Cards */
+.yarn-card {
     width: 250px;
-	border: 1px solid black;
-	box-shadow: 4px 4px 4px rgb(121, 172, 249);
-	background-color: rgb(247, 247, 247);
-	border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px rgb(87, 87, 87);
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    min-height: 200px;
+    padding: 20px;
+    margin: 30px;
+}
+
+/* Delete Button */
+.delete-yarn {
+    margin-top: 10px;
+    background-color: rgb(141, 181, 255);
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
 }
