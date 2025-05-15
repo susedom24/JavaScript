@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: rgb(132, 189, 254);
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background);
+    color: black;
+    border: 2px solid white;
+}
+
+.title {
+    padding: 20px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.yarn-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.yarn-card {
+    border: 2px solid white;
+    padding: 20px;
+    background-color: var(--background);
+    color: black;
+    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+}
+
+.yarn-card p {
+    margin-top: 10px;
+}
+
+.animation {
+    height: 250px;
+    width: 250px;
+    background-color: var(--background);
+    border: 2px solid white;
+    color: black;
+    border-radius: 5px;
+    position: relative;
+    left: -300px;
+    transition: all 0.3s ease-in-out;
+}
+
+.animation p, .animation h2 {
+    margin: 20px;
+}
+
+#slide-in, #load {
+    padding: 5px;
+    background-color: var(--background);
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.desc {
+    background-color: var(--background);
+    border: 2px solid white;
+    padding: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+#ajax, .ajax h2, .ajax p {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
